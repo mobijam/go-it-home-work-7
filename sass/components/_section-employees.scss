@@ -1,0 +1,112 @@
+// Секция сотрудников
+.team {
+    background-color: $team-section-bg;
+  }
+// Заголовок секции
+  .team-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  
+    color: $secondary-page-text;
+  
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+// Офофрмление списка сотрудников
+  .team-list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  
+    list-style-type: none;
+  }
+// Карточка сотрудника
+  .employee-card {
+    margin-right: 30px;
+    border-radius: 4px;
+  
+    text-align: center;
+  
+    background-color: $primary-bg;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    & img {
+      margin-bottom: 30px;
+    }
+  } 
+//  Имя сотрудника
+%info {
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.employee-name {
+    @extend %info;
+    margin-bottom: 10px;
+    color: $secondary-page-text;
+    font-weight: 500;
+  }
+// Должность
+.employee-position {
+    @extend %info;
+    margin-bottom: 28px;
+    color: $primary-page-text;
+}
+
+// Список иконок социальных сетей
+  .social-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-top: 0px;
+    margin-bottom: 24px;
+    padding: 0px;
+  
+    list-style-type: none;
+  }
+  
+  .icon {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+    
+  .icon > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+  
+    border-radius: 50%;
+  
+    fill: $link-icons;
+  
+    transition: all $animation-period $timing-function;
+  }
+  
+  .icon-footer > a {
+    background-color: $footer-links-bg;
+    fill: $page-hero-text;
+  
+    transition: all $animation-period $timing-function;
+  }
+  
+  .icon a:hover,
+  .icon a:focus {
+    background-color: $main-accent;
+    fill: $page-hero-text;
+  }

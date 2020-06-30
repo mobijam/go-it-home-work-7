@@ -6,7 +6,7 @@
         <title lang="en">Web Studio</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"/>
-        <link rel="stylesheet" href="./css/styles.css"/>
+        <link rel="stylesheet" href="./css/main.min.css"/>
     </head>
     <body>
     <!-- Шапка сайта -->
@@ -296,10 +296,8 @@
                     <div class="subscribtion">
                     <b class="join-us">Подпишитесь на рассылку</b>
                         <form class="footer-form js-speaker-form">
-                            <div class="form-field">
-                                <label for="mail-sub" class="mail-label">E-mail</label>
-                                <input type="email" name="mail-sub" id="mail-sub" placeholder=" " class="footer-input" required>
-                            </div>
+                            <label for="mail-sub"></label>
+                            <input type="email" name="mail-sub" id="mail-sub" placeholder="E-mail" class="footer-input" required>
                             <button type="submit" class="subscribe-btn">Подписаться
                                 <svg width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg>
                             </button>
@@ -311,35 +309,35 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
-              <form class="form js-speaker-form">
+                <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
+                <button type="button" class="btn-close-modal" data-modal-close>
+                    <svg width="18" height="18"><use href="./images/sprite.svg#icon-close-modal"></use></svg>
+                </button>
+                <form class="form js-speaker-form" autocomplete="off">
                     <label class="modal-form-field">
-                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-name"></use></svg>
-                        <span class="input-label">Имя</span>
                         <input type="text" name="name" placeholder=" " class="modal-input">
+                        <span class="input-label">Имя</span>
+                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-name"></use></svg>
                     </label>
                     <label class="modal-form-field">
-                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-tel"></use></svg>
-                        <span class="input-label">Телефон</span>
                         <input type="tel" name="tel" placeholder=" " class="modal-input">
+                        <span class="input-label">Телефон</span>
+                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-tel"></use></svg>
                     </label>
                     <label class="modal-form-field">
-                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-mail"></use></svg>
-                        <span class="input-label">Почта</span>
                         <input type="email" name="mail" placeholder=" " class="modal-input">
+                        <span class="input-label">Почта</span> 
+                        <svg width="18" height="18" class="icon-modal"><use href="./images/sprite.svg#form-mail"></use></svg>
                     </label>
-                    <label class="modal-form-field comment-field">
-                        <textarea name="comment" placeholder=" " class="modal-input"></textarea>
+                    <label class="comment-field">
+                        <textarea name="comment" placeholder=" "></textarea>
                         <span class="input-label">Комментарий</span>
                     </label>
                     <label class="checkbox-label">
                         <input class="checkbox" type="checkbox" name="policy">
                         <span class="checkbox-icon"></span>
                         <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
-                    </label>                  
-                    <button type="button" class="btn-close-modal" data-modal-close>
-                        <svg width="18" height="18"><use href="./images/sprite.svg#icon-close-modal"></use></svg>
-                    </button>
+                    </label>
                     <button type="submit" class="order submit">Отправить</button>
                 </form> 
             </div>

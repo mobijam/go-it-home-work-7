@@ -1,0 +1,53 @@
+// Секция клиентов
+// Заголовок секции
+.clients-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  
+    color: $secondary-page-text;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+// Оформление списка клиентов
+  .clients-list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  
+    list-style-type: none;
+  }
+  
+  .clients-list > li {
+    font-size: 0px;
+    margin-right: 30px;
+
+    & :last-child {
+      margin-right: 0px;
+    }
+  }
+// Оформление иконок клиентов
+  .client-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 170px;
+    height: 90px;
+  
+    fill: $link-icons;
+  
+    border: 1px solid $link-icons;
+    border-radius: 4px;
+  
+    transition: all $animation-period $timing-function;
+
+    &:hover, &:focus {
+      fill: $main-accent;
+      border: 1px solid $main-accent;
+    }
+  }

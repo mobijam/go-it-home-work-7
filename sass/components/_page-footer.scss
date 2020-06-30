@@ -1,0 +1,70 @@
+// Подвал сайта
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-bg;
+  }
+  
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+  
+.location {
+    display: inline-block;
+    margin-right: 69px;
+}
+
+  // Адрес веб-студии
+%address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.map-link {
+    @extend %address;
+    display: block;
+    color: $page-hero-text;
+  }
+
+  // Контакты веб-студии в футере
+  .footer-contacts {
+    @extend %address;
+    color: $footer-contacts;
+  }
+  
+//  Призыв "присоединяйтесь"
+  .join-us {
+    display: inline-block;
+    margin-bottom: 21px;
+  
+    color: $page-hero-text;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .community-footer {
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  
+    list-style-type: none;
+  }
+  
+  .community-footer > li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 94px;
+    }
+  }

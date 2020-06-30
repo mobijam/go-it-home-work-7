@@ -1,0 +1,61 @@
+// Основной контент 
+.our-benefits {
+  padding-top: 94px;
+  color: $primary-page-text;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+// Оформление списка "Наши преимущества"
+.benefits-list {
+  display: flex;
+  justify-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style-type: none;
+
+  & p {
+    margin: 0px;
+  }
+
+  & li {
+    margin-right: 30px;
+  }
+
+  & li:last-child {
+    margin-right: 0px;
+  }
+}
+// Иконка
+.bnf-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px; 
+  background-color:  $bnf-icons-bg;
+}
+
+// Заголовок
+.title {
+  color: $secondary-page-text;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.box {
+  border-bottom: 1px solid #ececec;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+}
