@@ -40,8 +40,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  
-  .community-footer {
+  // Список социальных сетей в футере
+.community-footer {
     @include centeredFlex($type: flex, $justify: center);
   
     margin-top: 0px;
@@ -49,12 +49,23 @@
     padding: 0px;
   
     list-style-type: none;
-  }
-  
-  .community-footer > li {
-    margin-right: 10px;
 
-    &:last-child {
-      margin-right: 94px;
-    }
+    & li {
+      margin-right: 10px;
+  
+      &:last-child {
+        margin-right: 94px;
+      }
   }
+}
+
+.icon-footer {
+  @extend %icon-link;
+  background-color: $footer-links-bg;
+  fill: $page-hero-text;
+
+  &:hover, &:focus {
+    background-color: $main-accent;
+  }
+
+}

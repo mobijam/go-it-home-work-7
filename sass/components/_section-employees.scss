@@ -65,38 +65,23 @@
     padding: 0px;
   
     list-style-type: none;
-  }
-  
-  .icon {
-    margin-right: 10px;
 
-    &:last-child {
-      margin-right: 0px;
+    & li {margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
     }
   }
-    
-  .icon > a {
-    @include centeredFlex();
-  
-    width: 44px;
-    height: 44px;
-  
-    border-radius: 50%;
-  
-    fill: $link-icons;
-  
-    transition: all $animation-period $timing-function;
-  }
-  
-  .icon-footer > a {
-    background-color: $footer-links-bg;
-    fill: $page-hero-text;
-  
-    transition: all $animation-period $timing-function;
-  }
-  
-  .icon a:hover,
-  .icon a:focus {
-    background-color: $main-accent;
-    fill: $page-hero-text;
+
+  // Иконки социальных сетей в карточках сотрудников и в футере
+  .icon {
+      @extend %icon-link;    
+      fill: $link-icons;
+
+      &:hover, &:focus {
+        background-color: $main-accent;
+        fill: $page-hero-text;
+      }
   }

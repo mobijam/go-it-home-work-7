@@ -30,6 +30,23 @@
   cursor: pointer;
 }
 
+.icon-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-input, .footer-input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -56,6 +73,14 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.studio-logo, .studio-logo-footer {
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* Шапка сайта */
@@ -218,14 +243,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.studio-logo, .studio-logo-footer {
-  display: inline-block;
-  font-family: Raleway;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .studio-logo {
@@ -408,12 +425,21 @@ img {
   list-style-type: none;
 }
 
-.community-footer > li {
+.community-footer li {
   margin-right: 10px;
 }
 
-.community-footer > li:last-child {
+.community-footer li:last-child {
   margin-right: 94px;
+}
+
+.icon-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.icon-footer:hover, .icon-footer:focus {
+  background-color: #2196f3;
 }
 
 .subscription, .footer-form {
