@@ -1,0 +1,21 @@
+// Страница портфолио
+// Оформление списка кнопок-фильтров 
+.filter {
+    @include centeredFlex($type: flex, $justify: center);
+  
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding: 0px;
+  
+    list-style-type: none;
+  }
+    
+  .filter-btn {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }

@@ -6,8 +6,7 @@
   }
   
 .footer-box {
-    display: flex;
-    align-items: baseline;
+  @include centeredFlex($type: flex, $align: baseline);
 }
   
 .location {
@@ -16,14 +15,6 @@
 }
 
   // Адрес веб-студии
-%address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
-
 .map-link {
     @extend %address;
     display: block;
@@ -51,8 +42,7 @@
   }
   
   .community-footer {
-    display: flex;
-    justify-content: center;
+    @include centeredFlex($type: flex, $justify: center);
   
     margin-top: 0px;
     margin-bottom: 0px;

@@ -17,7 +17,7 @@
   }
 // Офофрмление списка сотрудников
   .team-list {
-    display: flex;
+    @include centeredFlex($type: flex);
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
@@ -43,12 +43,6 @@
     }
   } 
 //  Имя сотрудника
-%info {
-  margin-top: 0px;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 .employee-name {
     @extend %info;
     margin-bottom: 10px;
@@ -64,9 +58,7 @@
 
 // Список иконок социальных сетей
   .social-links-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex();
   
     margin-top: 0px;
     margin-bottom: 24px;
@@ -84,9 +76,7 @@
   }
     
   .icon > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex();
   
     width: 44px;
     height: 44px;

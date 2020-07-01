@@ -14,7 +14,8 @@
   }
 // Оформление списка клиентов
   .clients-list {
-    display: flex;
+    @include centeredFlex($type: flex);
+
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
@@ -32,9 +33,7 @@
   }
 // Оформление иконок клиентов
   .client-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex();
     
     width: 170px;
     height: 90px;

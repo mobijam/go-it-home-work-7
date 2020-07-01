@@ -9,8 +9,7 @@
 
 // Оформление списка "Наши преимущества"
 .benefits-list {
-  display: flex;
-  justify-items: center;
+  @include centeredFlex($type: flex, $justify: center);
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
@@ -30,9 +29,7 @@
 }
 // Иконка
 .bnf-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
